@@ -1,0 +1,24 @@
+<import src="../listTemp/listTemp.wxml" />
+
+
+<view>
+  <swiper autoplay indicator-dots indicator-color="grey" indicator-active-color="red" circular>
+    <swiper-item>
+      <image src="/images/detail/carousel/01.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/detail/carousel/02.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/detail/carousel/03.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/detail/carousel/04.jpg" />
+    </swiper-item>
+  </swiper>  
+    <block>
+      <view wx:for="{{listDatas}}" wx:key="{{index}}" catchtap='toDetail' data-index='{{index}}'>
+        <template is="msgItem" data='{{...item}}'></template>
+      </view>
+    </block>
+</view>

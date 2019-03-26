@@ -1,0 +1,18 @@
+<template name="msgItem">
+  <view class="tempContainer">
+    <view class="tempBox">
+      <image src="{{avatar}}" class="tempAvatar"></image>
+      <text class="tempText">{{date}}</text>
+    </view>
+    <text class="text">{{title}}</text>
+    <image src="{{detail_img}}" class="content"></image>
+    <text>{{detail_content}}</text>
+    <view class="tempStar">
+      <image src="{{detail_love_image1}}"/>
+      <text>{{love_count}}</text>
+      <image src="{{detail_love_image2}}"/>
+      <text>{{attention_count}}</text>
+    </view>
+  </view>
+</template>
+
